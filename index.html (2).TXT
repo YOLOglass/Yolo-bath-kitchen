@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>YOLO Bath & Kitchen | Remodeling Experts</title>
+  <meta name="description" content="YOLO Bath & Kitchen — bathroom & kitchen remodeling. Affordable pricing, quality craftsmanship, and trusted local service.">
+  <meta name="keywords" content="bathroom remodeling, kitchen remodeling, custom cabinets, renovation, YOLO Bath & Kitchen">
+  <style>
+    body { margin:0; font-family: sans-serif; line-height:1.6; }
+    header { background:#f8f8f8; padding:16px; text-align:center; font-weight:bold; font-size:1.4em; }
+    nav a { margin:0 12px; color:#111; text-decoration:none; font-weight:600; }
+    .hero { padding:40px 20px; text-align:center; }
+    .hero img { max-width:100%; border-radius:12px; margin-top:20px; }
+    section { padding:40px 20px; max-width:900px; margin:0 auto; }
+    h2 { margin-top:0; }
+    footer { text-align:center; padding:24px 20px; background:#f0f0f0; font-size:.9em; }
+    .btn { display:inline-block; margin:12px 6px; padding:12px 18px; border-radius:8px; text-decoration:none; font-weight:700; }
+    .btn.primary { background:#111; color:#fff; }
+    .btn.light { background:#fff; color:#111; border:1px solid #111; }
+  </style>
+</head>
+<body>
+
+<header>
+  YOLO Bath & Kitchen
+  <nav>
+    Home
+    About
+    Services
+    Contact
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h1>Transform Your Home with YOLO Bath & Kitchen</h1>
+  <p>Years of experience, affordable pricing, and quality craftsmanship — trusted by our local community.</p >
+  <a class="btn primary" href="#contact">Get a Free Consultation</a >
+  <a class="btn light" href="#services">Explore Services</a >
+  <!-- 免费商用厨房装修图片 -->
+  < img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1600&auto=format&fit=crop" alt="Modern kitchen renovation">
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>YOLO Bath & Kitchen is a trusted remodeling company specializing in bathroom and kitchen renovations. We deliver high-quality results at prices that make sense.</p >
+  <ul>
+    <li>Transparent, affordable pricing</li>
+    <li>Quality craftsmanship you can rely on</li>
+    <li>Strong local reputation built on trust</li>
+    <li>Personalized service tailored to your needs</li>
+  </ul>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+  <ul>
+    <li>Bathroom Remodeling <br>< img src="https://images.unsplash.com/photo-1598300050931-24c7cb9f6f18?q=80&w=1200&auto=format&fit=crop" alt="Bathroom renovation" style="width:100%; border-radius:8px; margin-top:8px;"></li>
+    <li>Kitchen Remodeling <br>< img src="https://images.unsplash.com/photo-1560184897-8b6f5a4f90c5?q=80&w=1200&auto=format&fit=crop" alt="Kitchen remodeling" style="width:100%; border-radius:8px; margin-top:8px;"></li>
+    <li>Custom Renovations <br>< img src="https://images.unsplash.com/photo-1598300050961-6b81c6a5fbc9?q=80&w=1200&auto=format&fit=crop" alt="Custom renovation" style="width:100%; border-radius:8px; margin-top:8px;"></li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>
+    Phone: 1 (626) 701-6729<br>
+    Email: <br>
+    Address: 12155 Mora Dr., Suite 7, Santa Fe Springs, CA 90670
+  </p >
+</section>
+
+<footer>
+  &copy; <span id="year"></span> YOLO Bath & Kitchen
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
