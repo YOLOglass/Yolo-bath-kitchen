@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YOLO Bath & Kitchen | Remodeling Experts</title>
+<style>
+body { margin:0; font-family: sans-serif; line-height:1.6; scroll-behavior: smooth; }
+header { background:#f8f8f8; padding:16px; text-align:center; font-weight:bold; font-size:1.4em; position:sticky; top:0; z-index:100; }
+nav a { margin:0 12px; color:#111; text-decoration:none; font-weight:600; }
+nav a:hover { text-decoration:underline; }
+.hero { padding:40px 20px; text-align:center; }
+.hero img { max-width:100%; border-radius:12px; margin-top:20px; background:#ccc; width:100%; height:300px; display:block; }
+section { padding:40px 20px; max-width:900px; margin:0 auto; }
+h2 { margin-top:0; }
+footer { text-align:center; padding:24px 20px; background:#f0f0f0; font-size:.9em; }
+.service-category { border: 1px solid #ddd; padding: 16px; margin-bottom: 24px; border-radius: 8px; }
+.service-category img { max-width: 100%; height: 200px; background:#ccc; display:block; border-radius: 8px; margin-top: 12px; }
+.gallery-container { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; }
+.gallery-item { width: 200px; height: 150px; background:#ccc; border-radius: 8px; cursor: pointer; transition: transform 0.2s; }
+.gallery-item:hover { transform: scale(1.05); }
+#lightbox { display: none; position: fixed; z-index: 999; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.8); align-items: center; justify-content: center; }
+#lightbox img { max-width: 90%; max-height: 90%; border-radius: 8px; }
+</style>
+</head>
+<body>
+<header>
+YOLO Bath & Kitchen
+<nav>
+Home
+About
+Services
+Gallery
+Contact
+</nav>
+</header>
+
+<section id="home" class="hero">
+<h1>Transform Your Home with YOLO Bath & Kitchen</h1>
+<p>Years of experience, affordable pricing, and quality craftsmanship — trusted by our local community.</p >
+<div style="width:100%; height:300px; background:#ccc; margin-top:20px; border-radius:12px;"></div>
+</section>
+
+<section id="about">
+<h2>About Us</h2>
+<p>YOLO Bath & Kitchen is a trusted remodeling company specializing in bathroom and kitchen renovations. We deliver high-quality results at prices that make sense.</p >
+</section>
+
+<section id="services">
+<h2>Our Services</h2>
+<div class="service-category">
+<h3>Bathroom Remodeling</h3>
+<div class="service-img" style="height:200px; background:#ccc;"></div>
+<div class="service-img" style="height:200px; background:#bbb; margin-top:8px;"></div>
+<p>High-quality bathroom renovations at affordable prices.</p >
+</div>
+<div class="service-category">
+<h3>Kitchen Remodeling</h3>
+<div class="service-img" style="height:200px; background:#ccc;"></div>
+<div class="service-img" style="height:200px; background:#bbb; margin-top:8px;"></div>
+<p>Modern and functional kitchen designs customized for you.</p >
+</div>
+<div class="service-category">
+<h3>Custom Cabinets</h3>
+<div class="service-img" style="height:200px; background:#ccc;"></div>
+<div class="service-img" style="height:200px; background:#bbb; margin-top:8px;"></div>
+<p>Durable and stylish cabinets tailored to your home.</p >
+</div>
+</section>
+
+<section id="gallery">
+<h2>Our Project Gallery</h2>
+<div class="gallery-container">
+<div class="gallery-item"></div>
+<div class="gallery-item"></div>
+<div class="gallery-item"></div>
+<div class="gallery-item"></div>
+<div class="gallery-item"></div>
+<div class="gallery-item"></div>
+<div class="gallery-item"></div>
+<div class="gallery-item"></div>
+</div>
+<div id="lightbox" onclick="closeLightbox()">
+< img id="lightbox-img" src="">
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<p>Phone: 1 (626) 701-6729<br>Email: yolobathandkitchen@gmail.com<br>Address: 12155 Mora Dr., Suite 7, Santa Fe Springs, CA 90670</p >
+</section>
+
+<footer>
+&copy; <span id="year"></span> YOLO Bath & Kitchen
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.querySelectorAll('.gallery-item').forEach(item => {
+item.addEventListener('click', () => {
+document.getElementById('lightbox-img').src = item.style.background;
+document.getElementById('lightbox').style.display = 'flex';
+});
+});
+function closeLightbox() { document.getElementById('lightbox').style.display = 'none'; }
+</script>
+</body>
+</html>
